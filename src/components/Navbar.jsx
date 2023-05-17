@@ -18,7 +18,7 @@ const NavLink = ({ pathLink, iconLink, tooltipText }) => {
       onMouseLeave={() => setIsHover(!isHover)}
       to={pathLink}
       className={
-        "relative w-12 h-12 rounded-full border border-slate-400 text-slate-400 flex justify-center items-center text-xl hover:bg-slate-400 hover:text-slate-900 transition-colors duration-300 ease-in-out"
+        "relative w-12 h-12 bg-slate-900 rounded-full border border-slate-400 text-slate-400 flex justify-center items-center text-xl hover:bg-slate-400 hover:text-slate-900 transition-colors duration-300 ease-in-out"
       }
     >
       <FontAwesomeIcon icon={iconLink}></FontAwesomeIcon>
