@@ -5,7 +5,7 @@ const Image = ({ urlImage, sizeImage }) => {
     <img
       src={urlImage}
       alt={"skill icon"}
-      className={(sizeImage || "w-36") + "  h-36 bg-black mb-4"}
+      className={(sizeImage || "w-36") + "  h-36 bg-white mb-4"}
     />
   );
 };
@@ -23,7 +23,7 @@ Title.propTypes = {
 };
 
 const Text = ({ text }) => {
-  return <p className={"text-justify"}>{text}</p>;
+  return <p className={"text-center"}>{text}</p>;
 };
 
 Text.propTypes = {
