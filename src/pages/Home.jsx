@@ -43,7 +43,7 @@ const Home = () => {
                   <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon>
                 </a>
                 <Link
-                  to={""}
+                  to={"/about"}
                   className={
                     "px-2 lg:px-4 py-3 lg:py-4 rounded-lg bg-blue-700 text-white hover:bg-slate-400 hover:text-slate-900 font-semibold text-xl"
                   }

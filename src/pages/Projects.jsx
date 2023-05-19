@@ -1,6 +1,13 @@
 import { Fragment } from "react";
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
+import profileLeo from "../assets/profile-leo.png";
+import elfooDrink from "../assets/elfooDrink.png";
+import questel from "../assets/questel.png";
+import ukkSekolah from "../assets/ukkSekolah.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Projects = () => {
   return (
@@ -10,76 +17,100 @@ const Projects = () => {
         <div className="min-h-screen container mx-auto px-8">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 pt-12 pb-24">
             <Card>
-              <Card.Image urlImage={"hehehe"} sizeImage={"w-full h-48"} />
-              <Card.Title title={"lamravel"} />
+              <Card.Image urlImage={profileLeo} sizeImage={"w-full h-32 md:80 lg:h-32"} />
+              <Card.Title title={"Profile Leo"} />
               <Card.Text
                 text={
-                  "lamra lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sequi."
+                  "Web Profile pribadi saya untuk menampilkan project yang pernah saya buat dan skill yang saya kuasai"
                 }
               />
+              <Card.Button>
+                <a
+                  href={"https://profil-leo.vercel.app"}
+                  className={
+                    "w-full py-2 text-lg font-semibold bg-teal-400 mb-2"
+                  }
+                >
+                  Live Preview <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+                </a>
+                <a
+                  href={""}
+                  className={"w-full py-2 text-lg font-semibold bg-orange-400"}
+                >
+                  Source Github{" "}
+                  <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                </a>
+              </Card.Button>
             </Card>
             <Card>
-              <Card.Image urlImage={"hehehe"} sizeImage={"w-full h-48"} />
-              <Card.Title title={"lamravel"} />
+              <Card.Image urlImage={elfooDrink} sizeImage={"w-full h-32 md:h-80 lg:h-32"} />
+              <Card.Title title={"elfooDrink"} />
               <Card.Text
                 text={
-                  "lamra lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sequi."
+                  "elfooDrink Adalah sebuah template e-commerce yang saya bikin menggunakan framework Frontend berbasis React dan Tailwind"
                 }
               />
+              <Card.Button>
+                <a
+                  href={"https://elfood-drink.vercel.app"}
+                  className={
+                    "w-full py-2 text-lg font-semibold bg-teal-400 mb-2"
+                  }
+                >
+                  Live Preview <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+                </a>
+                <a
+                  href={""}
+                  className={"w-full py-2 text-lg font-semibold bg-orange-400"}
+                >
+                  Source Github{" "}
+                  <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                </a>
+              </Card.Button>
             </Card>
             <Card>
-              <Card.Image urlImage={"hehehe"} sizeImage={"w-full h-48"} />
-              <Card.Title title={"lamravel"} />
+              <Card.Image urlImage={questel} sizeImage={"w-full h-32 md:h-80 lg:h-32"} />
+              <Card.Title title={"questel"} />
               <Card.Text
                 text={
-                  "lamra lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sequi."
+                  "questel Web seperti soal dari 4 kategori mapel yaitu Matematika, Ipa, Ips, Dan Sains, untuk melatih pemahaman saya dalam menggunakan API dari API yang saya bikin Sendiri"
                 }
               />
+              <Card.Button>
+                <a
+                  href={"https://questel.vercel.app"}
+                  className={
+                    "w-full py-2 text-lg font-semibold bg-teal-400 mb-2"
+                  }
+                >
+                  Live Preview <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+                </a>
+                <a
+                  href={""}
+                  className={"w-full py-2 text-lg font-semibold bg-orange-400"}
+                >
+                  Source Github{" "}
+                  <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                </a>
+              </Card.Button>
             </Card>
             <Card>
-              <Card.Image urlImage={"hehehe"} sizeImage={"w-full h-48"} />
-              <Card.Title title={"lamravel"} />
+              <Card.Image urlImage={ukkSekolah} sizeImage={"w-full h-32 md:h-80 lg:h-32"} />
+              <Card.Title title={"Project UKK"} />
               <Card.Text
                 text={
-                  "lamra lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sequi."
+                  "Project UKK adalah sebuah project tugas akhir dari sebuah bentuk hasil yang dicapai pada waktu magang"
                 }
               />
-            </Card>
-            <Card>
-              <Card.Image urlImage={"hehehe"} sizeImage={"w-full h-48"} />
-              <Card.Title title={"lamravel"} />
-              <Card.Text
-                text={
-                  "lamra lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sequi."
-                }
-              />
-            </Card>
-            <Card>
-              <Card.Image urlImage={"hehehe"} sizeImage={"w-full h-48"} />
-              <Card.Title title={"lamravel"} />
-              <Card.Text
-                text={
-                  "lamra lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sequi."
-                }
-              />
-            </Card>
-            <Card>
-              <Card.Image urlImage={"hehehe"} sizeImage={"w-full h-48"} />
-              <Card.Title title={"lamravel"} />
-              <Card.Text
-                text={
-                  "lamra lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sequi."
-                }
-              />
-            </Card>
-            <Card>
-              <Card.Image urlImage={"hehehe"} sizeImage={"w-full h-48"} />
-              <Card.Title title={"lamravel"} />
-              <Card.Text
-                text={
-                  "lamra lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sequi."
-                }
-              />
+              <Card.Button>
+                <a
+                  href={""}
+                  className={"w-full py-2 text-lg font-semibold bg-orange-400"}
+                >
+                  Source Github{" "}
+                  <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                </a>
+              </Card.Button>
             </Card>
           </div>
         </div>

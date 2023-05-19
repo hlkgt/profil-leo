@@ -27,7 +27,7 @@ const NavLink = (props) => {
       onMouseLeave={() => setIsHover(!isHover)}
       to={pathLink}
       className={
-        "relative w-11 h-11 lg:w-12 lg:h-12 bg-slate-900 rounded-full border border-slate-400 text-slate-400 flex justify-center items-center text-xl hover:bg-slate-400 hover:text-slate-900 transition-colors duration-300 ease-in-out"
+        "relative w-10 h-10 lg:w-12 lg:h-12 bg-slate-900 rounded-full border border-slate-400 text-slate-400 flex justify-center items-center text-xl hover:bg-slate-400 hover:text-slate-900 transition-colors duration-300 ease-in-out"
       }
     >
       <FontAwesomeIcon icon={iconLink}></FontAwesomeIcon>
@@ -69,7 +69,7 @@ const Navbar = () => {
       <div
         className={
           (isShow ? "top-6" : "-top-80") +
-          " bg-slate-300 text-slate-900 rounded-xl absolute right-6 transition-all duration-300 ease-in-out flex flex-col gap-4 px-4 py-8"
+          " bg-slate-300 text-slate-900 rounded-xl fixed right-6 transition-all duration-300 ease-in-out flex flex-col gap-4 px-4 py-8 border-2 border-slate-900"
         }
       >
         <Notification

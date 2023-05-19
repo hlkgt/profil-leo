@@ -5,7 +5,7 @@ const Image = ({ urlImage, sizeImage }) => {
     <img
       src={urlImage}
       alt={"skill icon"}
-      className={(sizeImage || "w-36") + "  h-36 bg-white mb-4"}
+      className={(sizeImage || "w-36") + " bg-white mb-4 object-fill"}
     />
   );
 };
@@ -23,16 +23,20 @@ Title.propTypes = {
 };
 
 const Text = ({ text }) => {
-  return <p className={"text-center"}>{text}</p>;
+  return <p className={"text-center mb-4"}>{text}</p>;
 };
 
 Text.propTypes = {
   text: PropTypes.string,
 };
 
+const Button = ({ children }) => {
+  return children;
+};
+
 const Card = ({ children }) => {
   return (
-    <div className="col-span-1 bg-slate-300 text-slate-900 flex justify-center items-center flex-col rounded-xl p-4 text-center">
+    <div className="col-span-1 bg-slate-300 text-slate-900 flex justify-between items-center flex-col rounded-xl p-4 text-center">
       {children}
     </div>
   );
@@ -44,5 +48,6 @@ Card.propTypes = {
 Card.Image = Image;
 Card.Title = Title;
 Card.Text = Text;
+Card.Button = Button;
 
 export default Card;

@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Navbar from "../components/Navbar";
+import myFoto from "../assets/myfoto.jpg"
 
 const About = () => {
   return (
@@ -7,11 +8,11 @@ const About = () => {
       <Navbar />
       <div className="w-full bg-slate-900">
         <div className="min-h-screen container mx-auto px-8 flex justify-center items-center">
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="col-span-1">
-              <img src="" alt={"foto-saya"} title={"foto-saya"} />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="col-span-1 flex justify-center items-center">
+              <img src={myFoto} alt={"foto-saya"} title={"foto-saya"} className={"w-[25rem] h-[25rem] object-cover"}/>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-1 flex justify-center flex-col">
               <h1 className={"text-4xl mb-2 font-bold text-slate-200"}>
                 Tentang Saya
               </h1>
