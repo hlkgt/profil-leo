@@ -17,7 +17,10 @@ const Projects = () => {
         <div className="min-h-screen container mx-auto px-8">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 pt-12 pb-24">
             <Card>
-              <Card.Image urlImage={profileLeo} sizeImage={"w-full h-32 md:80 lg:h-32"} />
+              <Card.Image
+                urlImage={profileLeo}
+                sizeImage={"w-full h-32 md:80 lg:h-32"}
+              />
               <Card.Title title={"Profile Leo"} />
               <Card.Text
                 text={
@@ -27,15 +30,19 @@ const Projects = () => {
               <Card.Button>
                 <a
                   href={"https://profil-leo.vercel.app"}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
                   className={
-                    "w-full py-2 text-lg font-semibold bg-teal-400 mb-2"
+                    "w-full py-2 text-lg font-semibold bg-teal-400 mb-2 hover:bg-teal-700 hover:text-white"
                   }
                 >
                   Live Preview <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
                 </a>
                 <a
-                  href={""}
-                  className={"w-full py-2 text-lg font-semibold bg-orange-400"}
+                  href={"https://github.com/hlkgt/profil-leo"}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
+                  className={"w-full py-2 text-lg font-semibold bg-orange-400 hover:bg-orange-700 hover:text-white"}
                 >
                   Source Github{" "}
                   <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
@@ -43,7 +50,10 @@ const Projects = () => {
               </Card.Button>
             </Card>
             <Card>
-              <Card.Image urlImage={elfooDrink} sizeImage={"w-full h-32 md:h-80 lg:h-32"} />
+              <Card.Image
+                urlImage={elfooDrink}
+                sizeImage={"w-full h-32 md:h-80 lg:h-32"}
+              />
               <Card.Title title={"elfooDrink"} />
               <Card.Text
                 text={
@@ -53,15 +63,19 @@ const Projects = () => {
               <Card.Button>
                 <a
                   href={"https://elfood-drink.vercel.app"}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
                   className={
-                    "w-full py-2 text-lg font-semibold bg-teal-400 mb-2"
+                    "w-full py-2 text-lg font-semibold bg-teal-400 mb-2 hover:bg-teal-700 hover:text-white"
                   }
                 >
                   Live Preview <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
                 </a>
                 <a
-                  href={""}
-                  className={"w-full py-2 text-lg font-semibold bg-orange-400"}
+                  href={"https://github.com/hlkgt/elfood-drink"}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
+                  className={"w-full py-2 text-lg font-semibold bg-orange-400 hover:bg-orange-700 hover:text-white"}
                 >
                   Source Github{" "}
                   <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
@@ -69,7 +83,10 @@ const Projects = () => {
               </Card.Button>
             </Card>
             <Card>
-              <Card.Image urlImage={questel} sizeImage={"w-full h-32 md:h-80 lg:h-32"} />
+              <Card.Image
+                urlImage={questel}
+                sizeImage={"w-full h-32 md:h-80 lg:h-32"}
+              />
               <Card.Title title={"questel"} />
               <Card.Text
                 text={
@@ -79,15 +96,21 @@ const Projects = () => {
               <Card.Button>
                 <a
                   href={"https://questel.vercel.app"}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
                   className={
-                    "w-full py-2 text-lg font-semibold bg-teal-400 mb-2"
+                    "w-full py-2 text-lg font-semibold bg-teal-400 mb-2 hover:bg-teal-700 hover:text-white"
                   }
                 >
                   Live Preview <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
                 </a>
                 <a
-                  href={""}
-                  className={"w-full py-2 text-lg font-semibold bg-orange-400"}
+                  href={
+                    "https://github.com/hlkgt/react-questions/tree/main/reactQuestions"
+                  }
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
+                  className={"w-full py-2 text-lg font-semibold bg-orange-400 hover:bg-orange-700 hover:text-white"}
                 >
                   Source Github{" "}
                   <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
@@ -95,7 +118,10 @@ const Projects = () => {
               </Card.Button>
             </Card>
             <Card>
-              <Card.Image urlImage={ukkSekolah} sizeImage={"w-full h-32 md:h-80 lg:h-32"} />
+              <Card.Image
+                urlImage={ukkSekolah}
+                sizeImage={"w-full h-32 md:h-80 lg:h-32"}
+              />
               <Card.Title title={"Project UKK"} />
               <Card.Text
                 text={
@@ -105,7 +131,9 @@ const Projects = () => {
               <Card.Button>
                 <a
                   href={""}
-                  className={"w-full py-2 text-lg font-semibold bg-orange-400"}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
+                  className={"w-full py-2 text-lg font-semibold bg-orange-400 hover:bg-orange-700 hover:text-white"}
                 >
                   Source Github{" "}
                   <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
